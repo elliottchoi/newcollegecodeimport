@@ -10,6 +10,16 @@
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <style>
 
+ @font-face {font-family:'VanadineRegular'; src:url('VanadineRegular.ttf');}
+         h3{
+         font-family:'VanadineRegular';
+         }
+         a{
+         text-decoration: none!important;
+         }
+         a:hover{
+         text-decoration: none;
+         }
 	
 
  /* For mobile phones: */
@@ -48,7 +58,7 @@
          }
 
           .header{
-         background-image: url('http://i.imgur.com/hrEZwnX.jpg');
+         background-image: url('http://i.imgur.com/BFfrli3.jpg');
          background-size: cover;
          background-repeat: no-repeat;
          background-position: center;
@@ -58,67 +68,144 @@
 	 width:100%;
          opacity: 0.9;
 	 z-index:-1;
+	}	
 
-	#frontPage {
-    	text-align: center;
-    	font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
-    	font-weight: 100;
-    	background: rgba(0,0,0,0.3);
-    	color: white;
-    	width: 30%;
-   	float: right;
-    	font-size: 1.2rem;
-    	position: absolute;
-    	right: 0;
-   	bottom: 0;
-    	height: 100%;
-	
-	.menu{
-        width: 100%;
-        position: relative;
-        margin: 0;
-        -webkit-transition: all .6s;
-        -moz-transition: all .6s;
-        -ms-transition: all .6s;
-        -o-transition: all .6s;
-        transition: all .6s;
-        }
-	  
-	 .menu.isCentered{
-         margin-top: calc(25% - 100px);
+	 .menu{
+         width: 100%;
+         position: relative;
+         margin: 0;
+         }
+         .menu.isCentered{
+         margin-top:0;
          margin-bottom: 120px;
          }
-	 
-	 .menu div{
-         max-width: 900px;
-         min-width: 500px;
+         .menu div{
+         max-width: 600px;
+         min-width: 300px;
          width: 100%;
          position: relative;
          margin: 0 auto;
-         background-color: rgba(44, 45, 46,0.75);
-         height: auto;
-         overflow: hidden;
-         padding: 30px 24px;
-         box-shadow: 3px 18px -3px 18px #111;
-         -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-         box-sizing: border-box;
          }
-         .menu.isCentered div{
+
+     .menu.isCentered div{
          padding: 3px 24px 30px;
          }
-}
+         .menu a.to-about-me{
+         height: 0px;
+         overflow: hidden;
+         display: block;
+         max-width: 600px;
+         min-width: 300px;
+         width: 100%;
+         position: relative;
+         margin: 0 auto;
+         box-shadow: 0px 3px 18px -3px #111;
+         cursor: pointer;
+         text-align: center;
+         -webkit-transition: all .3s;
+         -moz-transition: all .3s;
+         -ms-transition: all .3s;
+         -o-transition: all .3s;
+         transition: all .3s;
+         }
+         .menu.isCentered a.to-about-me{
+         height: 75px;
+         }
+         .menu a.to-about-me:hover{
+         opacity: 0.9;
+         }
+         .menu a.to-about-me img{
+         width: 30px;
+         padding: 6px 0 0 0;
+         margin-top: -30px;
+         opacity: 0.6;
+         -webkit-box-sizing: content-box;
+         -moz-box-sizing: content-box;
+         box-sizing: content-box;
+         }
+         .menu a.to-about-me span{
+         display: block;
+         font-size: 18px;
+         line-height: 54px;
+         color: #555;
+         font-weight: bold;
+         font-family: "VanadineRegular";
+         }
+         .menu div h3{
+         font-size: 30px;
+         color: #CCC;
+         margin-bottom: 24px;
+         text-align: center;
+         }
+         .menu div a{
+         display: block;
+         width: 20%;
+         float: left;
+         height: 70px;
+         text-align: center;
+         white-space: nowrap;
+         -webkit-transition: all .24s;
+         -moz-transition: all .24s;
+         -ms-transition: all .24s;
+         -o-transition: all .24s;
+         transition: all .24s;
+         }
+         .menu div a.prof-image{
+         width: 20%;
+         height: 90px;
+         box-shadow: 9px 0px 9px -9px #222;
+         cursor: default;
+
+         }
+         .menu div a>img{
+         max-height: 90%;
+         max-width: 90%;
+  	 filter: grayscale(100%);
+    	 -webkit-filter: grayscale(1); /* Old WebKit */	
+	 transition: all 0.48s ease-in
+         vertical-align: middle;
+         display: inline-block;
+         }
+
+         .menu div a>img:hover{
+ 	 filter: grayscale(0%);
+    	 -webkit-filter: grayscale(0); /* Old WebKit */	
+	 transition: all 0.48s ease-in
+         }
+
+
+         .helper {
+         display: inline-block;
+         height: 100%;
+         vertical-align: middle;
+         }
+	
+	 #NewCollegeLogo{
+	 display:block;	
+	 margin:0 auto;
+	 max-height:300px;
+	 width:auto;
+	 }
 }
 </style>
 </head>
 <body>
+	
+	<header>
 	<div class="header"></div>
 	<div class="menu isCentered">
 	<div>
-	<h3>University of Toronto, New College</h3>
-	<h1>New Dragons</h1>
+	<img id="NewCollegeLogo" class="img-responsive" src="http://i.imgur.com/ZFUBswG.png" alt="logo not found">
 	</div>
-	</div>
+            <a href="https://facebook.com" class="to-about-me">
+         <span>Enter</span>
+         <img src="http://i.imgur.com/Vq308PV.png" />
+         </a>
+      </div>
+
+	
+
+
 
 
 
