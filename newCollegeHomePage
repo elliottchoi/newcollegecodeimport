@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Elliott Choi</title>
+      <link href="style.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="h">
+<img id="newCollegePrime" class="img-responsive" src="http://i.imgur.com/ZFUBswG.png" alt="logo not found">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	<a href="#" class="navbar-left"><img id="newCollegeLogoNav" src="http://i.imgur.com/ZFUBswG.png"></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">about Us <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Executive Team</a></li>
+          <li><a href="#">Roster</a></li>
+          <li><a href="#">About Dragonboat</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">News <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Current Season</a></li>
+          <li><a href="#">Upcoming Events</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div><!-- div for header photo-->
+</div>
+
+<!-- Main Slide Down-->
+<div id="g">
+</div><!--secondary slide down-->
+</nav>
+
+</body>
